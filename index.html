@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCR · Sede Guanacaste | Campaña contra el acoso</title>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+  <body>
+    <div class="two-columns">
+      <script type="module" src="./main.js"></script>
+      <div class="poster-container">
+        <poster-acoso id="mi-poster-acoso"></poster-acoso>
+      </div>
+      <script type="module">
+        const posterAcoso = document.getElementById("mi-poster-acoso");
+
+        posterAcoso.datosPoster = [
+          "¡",
+          "LA SEDE",
+          "TE",
+          "ACOMPAÑA",
+          "!",
+          "El respeto no se negocia",
+          "¡Pará ya dee acosar!",
+          "Escanea este QR.",
+          "UCR",
+          "UCR libre de acoso",
+          "SG Sede Guanacaste",
+        ];
+      </script>
+      <poster-aulas id="mi-poster"></poster-aulas>
+
+      <div class="poster-container"></div>
+
+      <script type="module">
+        const poster1 = document.getElementById("mi-poster");
+
+        poster1.aulasData = [
+          "Aulas 1, 2, 3",
+          "Apoyo informático",
+          "Servidores", //
+          "Lab 1 y 2",
+          "Coordinacion",
+          "Informática Empresarial",
+          "UCR",
+        ];
+      </script>
+    </div>
+  </body>
+</html>
